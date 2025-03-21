@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -156,12 +157,17 @@ h5 {
 }
 @media (min-width: 768px) {
   .hero-section {
-    padding: 60px 32px 60px 32px;
+    padding: 60px 32px 16px 32px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-section {
+    padding: 60px 40px 20px 40px;
   }
 }
 @media (min-width: 1920px) {
   .hero-section {
-    padding: 60px 320px 52px 320px;
+    padding: 60px 320px 20px 320px;
   }
 }
 
@@ -174,6 +180,17 @@ h1 {
     font-size: 49px;
   }
 }
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 61px;
+  }
+}
+@media (min-width: 1920px) {
+  h1 {
+    text-align: left;
+    margin-bottom: 52px;
+  }
+}
 
 p {
   padding: 20px 0 20px 0;
@@ -181,6 +198,19 @@ p {
 @media (min-width: 768px) {
   p {
     font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    width: 704px;
+    display: flex;
+    justify-self: center;
+  }
+}
+@media (min-width: 1920px) {
+  p {
+    width: 630px;
+    text-align: left;
   }
 }
 
@@ -191,6 +221,12 @@ p {
   border: none;
   font-weight: 700;
   margin-bottom: 40px;
+}
+@media (min-width: 1920px) {
+  .btn {
+    width: 174px;
+    height: 56px;
+  }
 }
 
 .main-picture {
@@ -221,5 +257,114 @@ p {
     max-height: 510px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-section__content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-section__text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.container .services-section__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+  padding: 0 16px 60px 16px;
+}
+.container .services-section__list-item {
+  width: 100%;
+  flex-grow: 1;
+}
+.container .services-icon {
+  height: 40px;
+  width: 40px;
+}
+.container h3 {
+  font-size: 20px;
+}
+.container .card {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 24px;
+  border-radius: 20px;
+  background-color: #F7F7F7;
+  border: none;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container .card p {
+  padding: 12px 0 24px 0;
+}
+.container .card h3 {
+  padding-top: 20px;
+}
+.container .card-text {
+  padding: 0 24px 0 24px;
+}
+@media (min-width: 768px) {
+  .container .services-section__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 32px 60px 32px;
+    justify-content: space-between;
+  }
+  .container .services-section__list .services-section__list-item {
+    width: calc(50% - 16px);
+    max-width: none;
+  }
+  .container .services-section__list .card {
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 24px;
+  }
+  .container .services-section__list .card-text {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .container .services-section__list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 40px 60px 40px;
+  }
+  .container .services-section__list-item {
+    flex: 1 1 auto;
+    min-width: 200px;
+    max-width: 100%;
+  }
+  .container .card {
+    height: 100%;
+  }
+  .container .card p {
+    width: 173px;
+  }
+}
+@media (min-width: 1920px) {
+  .container .services-section__list {
+    padding: 0 320px 60px 320px;
+  }
+  .container .hero-section__content {
+    display: flex;
+    justify-content: space-between; /* h1 į kairę, tekstas į dešinę */
+    align-items: center; /* Centruoja vertikaliai */
+    width: 100%; /* Užima visą ekraną */
+    margin: 0; /* Pašalina tarpus */
   }
 }/*# sourceMappingURL=styles.css.map */

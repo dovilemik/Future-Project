@@ -1,0 +1,113 @@
+.container {
+    .services-section__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        gap: 16px;
+        padding: 0 16px 60px 16px;
+    }
+
+    .services-section__list-item {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .services-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .card {
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 24px;
+        border-radius: 20px;
+        background-color: #F7F7F7;
+        border: none;
+        flex-grow: 1;
+        width: 100%;
+        box-sizing: border-box;
+
+        p {
+            padding: 12px 0 24px 0;
+        }
+
+        h3 {
+            padding-top: 20px;
+        }
+    }
+
+    .card-text {
+        padding: 0 24px 0 24px;
+    }
+
+    @media (min-width: 768px) {
+        .services-section__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0 32px 60px 32px;
+            justify-content: space-between;
+
+            .services-section__list-item {
+                width: calc(50% - 16px);
+                max-width: none;
+            }
+
+            .card {
+                align-items: flex-start;
+                text-align: left;
+                padding-left: 24px;
+            }
+
+            .card-text {
+                padding-left: 0;
+            }
+        }
+    }
+
+    
+    @media (min-width: 1024px) {
+        .services-section__list {
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: stretch;
+            padding: 0 40px 60px 40px;
+        }
+
+        .services-section__list-item {
+            flex: 1 1 auto;
+            min-width: 200px;
+            max-width: 100%; 
+        }
+
+        .card {
+            height: 100%;
+        }
+        .card p {
+            width:173px;
+        }
+    }
+
+        @media (min-width: 1920px) {
+            .services-section__list {
+                padding: 0 320px 60px 320px;
+            }
+
+            .hero-section__content {
+                display: flex;
+                justify-content: space-between; /* h1 į kairę, tekstas į dešinę */
+                align-items: center; /* Centruoja vertikaliai */
+                width: 100%; /* Užima visą ekraną */
+                margin: 0; /* Pašalina tarpus */
+            }
+        
+    }}
