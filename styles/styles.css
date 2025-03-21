@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -362,9 +361,9 @@ p {
   }
   .container .hero-section__content {
     display: flex;
-    justify-content: space-between; /* h1 į kairę, tekstas į dešinę */
-    align-items: center; /* Centruoja vertikaliai */
-    width: 100%; /* Užima visą ekraną */
-    margin: 0; /* Pašalina tarpus */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
