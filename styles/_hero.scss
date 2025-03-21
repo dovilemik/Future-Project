@@ -2,17 +2,30 @@
 .hero-section {
     display: flex;
     flex-direction: column;
-    padding: 60px 16px 60px 16px;
+    padding: 60px 16px 16px 16px;
     text-align: center;
+    @media (min-width: 768px) {
+        padding: 60px 32px 60px 32px;
+    }
+
+    @media (min-width: 1920px) {
+        padding: 60px 320px 52px 320px;
+    }
 }
 
 h1 {
     font-size: 39px;
+    @media (min-width: 768px) {
+        font-size: 49px;
+    }
     line-height: 120%;
 }
 
 p {
     padding: 20px 0 20px 0;
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 .btn {
@@ -24,10 +37,26 @@ p {
     margin-bottom: 40px;
 }
 
-img {
+.main-picture {
     border-radius: 40px;
-    height: 280px;
+    min-height: 280px;
     min-width: 328px;
     width: 100%;
     margin: auto;
+    object-fit: cover;
+
+    @media (min-width: 768px){
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    @media (min-width: 1024px){
+        max-height: 510px;
+        object-fit: cover;
+    }
+
+    @media (min-width: 1920px){
+        max-height: 510px;
+        object-fit: cover;
+    }
 }
