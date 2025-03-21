@@ -66,6 +66,12 @@ p {
      height:56px;
     }
 }
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color:#F15A24;
+    border: 1px solid #F15A24;
+}
 
 .main-picture {
     border-radius: 40px;

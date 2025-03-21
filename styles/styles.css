@@ -147,6 +147,10 @@ h5 {
     padding: 32px 320px;
   }
 }
+.top-navigation .top-navigation__contact-us:hover {
+  background-color: #F15A24;
+  color: white;
+}
 
 .hero-section {
   display: flex;
@@ -226,6 +230,13 @@ p {
     width: 174px;
     height: 56px;
   }
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #F15A24;
+  border: 1px solid #F15A24;
 }
 
 .main-picture {
